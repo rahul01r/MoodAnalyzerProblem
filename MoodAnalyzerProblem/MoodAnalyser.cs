@@ -20,7 +20,7 @@ namespace MoodAnalyzerProblem
         {
             if (message == string.Empty)
             {
-                throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.EMPTY_MOOD, "Message is Empty");
+                throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NO_SUCH_CLASS, "Message is Empty");
             }
             try
             {
@@ -35,7 +35,7 @@ namespace MoodAnalyzerProblem
             }
             catch (MoodAnalyserException)
             {
-                throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NULL_MOOD, "Message is Null");
+                throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NO_SUCH_METHOD, "Message is Null");
             }
         }
     }
